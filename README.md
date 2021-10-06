@@ -1,24 +1,27 @@
-<h3>Yax | Software House - Zadanie Frontend</h3>
-<p>Zbuduj i Upiększ formularz!<p>
+# Zadanie rekrutacyjne do firmy YAX na staż Web Developera
 
-<p>Do dyspozycji masz trzy pliki odpowiedzialne za poszczególne etapy zadania: html, css i javascript.
-W każdym z tych plików znajduje się instrukcja zawierająca informację na temat tego, co należy wykonać.
-Zacznij od pliku index.html, przeanalizuj go, a następnie przejrzyj plik .css i .js. </p>
+Projekt został przygotowany w celu wzięcia udziału w procesie rekrutacyjnym.
 
-w folderze <b>/img</b>, masz schemat formularza oraz proponowany wygląd (niekoniecznie musi być taki sam jak na obrazku :)
+**Technologie i narzędzia użyte w procesie tworzenia:**
+- IDE: Visual Studio Code
+- Kontrola wersji: GIT
+- Task runner: GULP
+  - gulp-sass
+  - node-sass
+  - gulp-cssnano
+  - gulp-autoprefixer
+  - gulp-rename
+  - gulp-babel
+  - gulp-uglify
+  - gulp-imagemin - nieużyłem, ale mogłoby się przydać przy grafikach
+  - gulp-sourcemaps
+  - gulp-clean
+  - gulp-kit
+  - browser-sync
+- Preprocesorów CSS: Sass
+- Includowanie w plikach html innych plików (.kit)
+- Bootstrap 4.6
 
-<p>dodatkowe punkty za:</p>
-<ul>
-<li>estetyka wykonania</li>
-<li>kreatywne podejscie</li>
-<li>dodanie walidacji do formularza (ograniczenie do liczby liter/cyfr , małe duże litery, znak specjalny etc. )</li>
-<li>dodanie elementów seo* :)</li>
-<li>zachowanie wszystkiego w technice RWD, z naciskiem na mobile-first</li>
-<li>użycie bibliotek css</li>
-<li>framework</li>
-</ul>
+Użyłem walidacji po stronie HTML z pomocą CSS (oznaczanie poprawnie/niepoprawnie wypełnionych pól).
 
-<p>pliki z rozwiązanym zadaniem proszę, umieścić w swoim <b>repozyterum</b> na <b>githab'ie</b> jako publiczne :) </p>
-
-
-<h4>Powodzenia | Janek Yax</h3>
+Autor: **Sławomir Oruba**

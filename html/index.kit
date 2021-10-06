@@ -1,452 +1,101 @@
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Yax | Software House Frontend Task - HTML
+    
+	W tym pliku znajduje się struktura strony z formularzem. Twoim zadaniem jest stworzenie oraz upiększenie
+	formularza. Przeanalizuj poniższy kod. Jego znajomość będzie potrzebna do przerobienia
+	pliku form.css odpowiedzialnego za styl strony. Gdy zapoznasz się ze strukturą strony,
+	przejdź do pliku css/form.css lub js/validation.js po dalsze instrukcje.
+    
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paweł Krzysztofik | Doradztwo Finansowe</title>
-    <!-- @include 'fonts/roboto.kit' -->
-    <!-- @include 'fonts/fontawesome.kit' -->
-    <!-- @include 'linkbootstrap441_css.kit' -->
+    <title>Yax | Software House Frontend Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- @include 'linkcss.kit' -->
+    <meta name='descripton'
+        content='Formularz rekrutacyjny przygotowany w celu wzięcia udziału w rekrutacji do firmy Yax. '>
+    <meta name="robots" content="follow">
+    <meta name='words' content='formularz, rekrutacja, yax, zgłoszenie'>
+    <meta name="author" content="Sławomir Oruba">
+    <meta name="viewport" charset="utf-8"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light py-4 fixed-top">
-        <div class="container">
-            <a class="navbar-brand px-4" href="#"><i class="fas fa-file-invoice-dollar color-gold pr-2"></i>Paweł<span
-                    class="font-weight-bold"> Krzysztofik</span></a>
-            <button class="navbar-toggler border-0 color-gold" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse px-4" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#start">Start</a>
-                    <a class="nav-item nav-link" href="#o-mnie">O mnie</a>
-                    <a class="nav-item nav-link" href="#oferta">Oferta</a>
-                    <a class="nav-item nav-link" href="#opinie">Opinie</a>
-                    <a class="nav-item nav-link" href="#kontakt">Kontakt</a>
-                    <a class="nav-item nav-link btn btn-dark text-light ml-2 px-3" href="tel:+48509863921">Zadzwoń</a>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-
-    <!-- HeroImage -->
-    <header id="start" class="mb-5">
-        <div class="hero-shadow"></div>
-        <div
-            class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
-            <p class="display-2">Paweł Krzysztofik</p>
-            <p class="display-4">Doradca finanasowy z Wrocławia</p>
-            <p class="header-text mb-5">Dzięki mojemu doświadczeniu pomogę Ci wybrać oraz obsługiwać najlepsze umowy finansowe na rynku.</p>
-            <a href="#o-mnie" class="btn btn-outline-light">Zobacz więcej</a>
-        </div>
-    </header>
-
     <main>
-        <section id="o-mnie" class="scroll-fix">
-            <div class="container py-5 about-boxes">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="display-4 color-gold">Co mnie wyróżnia?</div>
-                        <hr class="mt-4 mb-5 w-50 mx-auto">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="about-box m-3 p-4 p-lg-5 border">
-                            <h3>Doświadczenie</h3>
-                            <p class="about-icon text-dark"><i class="fas fa-book"></i></p>
-                            <p class="text-dark">W branży doradztwa finansowego pracuję nieprzerwanie od 6 lat. Zawsze rzetelnie podchodzę do zdobywania nowej wiedzy we wciąż zmieniających się umowach finansowych.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="about-box m-3 p-4 p-lg-5 border bg-gold text-light">
-                            <h3>Obsługa</h3>
-                            <p class="about-icon"><i class="fa fa-user-shield"></i></p>
-                            <p>Obsługując swoich klientów kładę nacisk na to aby umowy, które zawierają za moim pośrednictwem były dla nich zrozumiałe i spełniały ich oczekiwania. Zawsze służę dobrą radą.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="about-box m-3 p-4 p-lg-5 border">
-                            <h3>Jakość</h3>
-                            <p class="about-icon text-dark"><i class="fa fa-award"></i></p>
-                            <p class="text-dark">Rozwiązania finansowe, które proponuję pochodzą od najstabilniejszych firm na rynku oraz są szczegółowo sprawdzane pod kątem wiarygodności. </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="about-box m-3 p-4 p-lg-5 border bg-gold text-light">
-                            <h3>Niezależność</h3>
-                            <p class="about-icon"><i class="fa fa-child"></i></p>
-                            <p>W mojej ofercie znajdują się produkty największych instytucji finansowych. Nie jestem związany z jedną firmą więc mogę polecić klientowi rozwiązania najlepiej do niego dopasowane.</p>
-                        </div>
-                    </div>
+        <section id="task-frontend">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Formularz rekrutacyjny</h1>
                 </div>
-            </div>
-        </section>
-        <section id="oferta" class="scroll-fix">
-            <div class="container about-info py-5 text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="display-4 color-gold">Zakres usług</div>
-                        <hr class="mt-4 mb-5 w-50 mx-auto">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link text-dark text-decoration-none" type="button"
-                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne"><i class="fas fa-heartbeat"></i>
-                                            Ubezpieczenia na Życie
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Przygotuj swoich bliskich na najtrudniejsze chwile. Zapewnij im utrzymanie obecnego standardu życia, zabezpiecz spłatę kredytu hipotecznego lub innych zobowiązań, zapewnij ciągłość swojego biznesu.
+                <div class="form-container">
+                    <div class="form-inner">
+                        <form action="#" class="login">
+                            <div class="field">
+                                <input type="text" placeholder="Imię" pattern="[A-Za-z]{2,20}" required>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Nazwisko" pattern="[A-Za-z]{2,20}" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" placeholder="Email"
+                                    pattern="[a-zA-Z0-9-]{3,}@[a-zA-Z0-9-]{3,}[.]{1}[a-zA-Z]{2,}" required>
+                            </div>
+                            <div class="field-checkbox">
+                                <p>Sekcje, które Cię interesują:</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="field-option">
+                                            <input class="checkbox" type="checkbox" name="frontend" value="frontend"
+                                                pattern="[A-Za-z]{2,20}">
+                                            <label for="frontend">frontend</label>
+                                        </div>
+                                        <div class="field-option">
+                                            <input class="checkbox" type="checkbox" name="mobile" value="mobile">
+                                            <label for="mobile">mobile</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="field-option">
+                                            <input class="checkbox" type="checkbox" name="backend" value="backend">
+                                            <label for="backend">backend</label>
+                                        </div>
+                                        <div class="field-option">
+                                            <input class="checkbox" type="checkbox" name="grafika" value="grafika">
+                                            <label for="grafika">grafika</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-pills"></i>
-                                            Ubezpieczenia na wypadek choroby
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab magnam iusto
-                                        commodi illo repellendus quibusdam optio, exercitationem maiores earum
-                                        voluptatum, ut est tenetur fuga accusantium quis quo, provident excepturi. Qui!
-                                    </div>
-                                </div>
+                            <div class="field">
+                                <input type="submit" value="Wyślij">
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-ambulance"></i>
-                                            Ubezpieczenia NNW
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                        eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                        Ipsum maiores ad iste veritatis.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive"><i class="fas fa-home"></i>
-                                        Kredyty Hipoteczne
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingSix">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseSix"
-                                        aria-expanded="false" aria-controls="collapseSix"><i class="fas fa-money-bill-alt"></i>
-                                        Kredyty na dowolny cel
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingSeven">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseSeven"
-                                        aria-expanded="false" aria-controls="collapseSeven"><i class="fas fa-car-crash"></i>
-                                        Ubezpieczenia OC i AC
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingEight">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseEight"
-                                        aria-expanded="false" aria-controls="collapseEight"><i class="fas fa-house-damage"></i>
-                                        Ubezpieczenia domu lub mieszkania
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingNine">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseNine"
-                                        aria-expanded="false" aria-controls="collapseNine"><i class="fas fa-plane"></i>
-                                        Ubezpieczenia w podróży
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTen">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseTen"
-                                        aria-expanded="false" aria-controls="collapseTen"><i class="fas fa-user-shield"></i>
-                                        Ubezpieczenia OC w życiu prywatnym
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingEleven">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseEleven"
-                                        aria-expanded="false" aria-controls="collapseEleven"><i class="fas fa-chess"></i>
-                                        Oszczędności emerytalne
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwelwe">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseTwelwe"
-                                        aria-expanded="false" aria-controls="collapseTwelwe"><i class="fas fa-baby"></i>
-                                        Oszczędności na dzieci
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwelwe" class="collapse" aria-labelledby="headingTwelwe"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThirteen">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed text-dark text-decoration-none"
-                                        type="button" data-toggle="collapse" data-target="#collapseThirteen"
-                                        aria-expanded="false" aria-controls="collapseThirteen"><i class="fas fa-solar-panel"></i>
-                                        Fotowoltaika
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque animi cum beatae
-                                    eum modi magnam culpa sunt cumque iure, at similique nisi laboriosam in fuga.
-                                    Ipsum maiores ad iste veritatis.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="opinie" class="scroll-fix mb-5">
-            <div class="container text-center py-5">
-                <p class="display-4 color-gold">Opinie klientów</p>
-                <hr class="w-50 mx-auto mt-4 mb-5">
-                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur quae ullam,
-                    ipsum vero quis quibusdam iste sunt eaque modi ratione quas perferendis fugit deserunt aliquid
-                    commodi totam facere illo?</p>
-
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title font-weight-bold">Krzysztow W.</h3>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer row justify-content-end mx-0 py-3">
-                                <footer class="blockquote-footer">"Someone famous in <cite title="Source Title">Source Title</cite>"</footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title font-weight-bold">Anna K.</h3>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer row justify-content-end mx-0 py-3">
-                                <footer class="blockquote-footer">"Someone famous in <cite title="Source Title">Source Title</cite>"</footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title font-weight-bold">Bogdan R.</h3>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer row justify-content-end mx-0 py-3">
-                                <footer class="blockquote-footer">"Someone famous in <cite title="Source Title">Source Title</cite>"</footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title font-weight-bold">Rafał Z.</h3>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer row justify-content-end mx-0 py-3">
-                                <footer class="blockquote-footer">"Someone famous in <cite title="Source Title">Source Title</cite>"</footer>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="kontakt" class="bg-gold text-muted scroll-fix ">
-            <div class="container text-center py-5">
-                <p class="display-3 mb-lg-5">Chętnie odpowiem na każde pytanie!</p>
-                <div class="row">
-                    <div class="my-5 m-lg-0 col-lg-3 contact-info order-lg-1">
-                        <h3>Adres:</h3>
-                        <p>ul. Szybowcowa 31</p>
-                        <p>54-130 Wrocław</p>
-                        <hr class="w-50 w-lg-75 mx-auto bg-light">
-                        <p><i class="fas fa-mobile-alt"></i> +48 509 863 921</p>
-                        <p><i class="fas fa-at"></i> pawelkrzysztofik3@gmail.com</p>
-                    </div>
-                    <div class="col-lg-9">
-                        <form>
-                            <div class="input-group input-group-lg mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Imię i nazwisko">
-                            </div>
-                            <div class="input-group input-group-lg mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-at"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Adres mailowy">
-                            </div>
-                            <div class="input-group input-group-lg mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-comment-alt"></i>
-                                    </span>
-                                </div>
-                                <textarea rows="6" class="form-control" placeholder="Treść wiadomości"></textarea>
-                            </div>
-                            <input type="submit" value='Wyślij' class="btn btn-light px-4 py-2 submit-btn">
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
 
+
+        </section>
     </main>
-    <footer class="bg-gold text-muted border-top">
-        <p class="text-center py-4 m-0">&copy; Paweł Krzysztofik | 2021 Copyright</p>
-    </footer>
-    <!-- @include 'linkbootstrap441_js.kit' -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- zaimportowanie pliku z kodem javascript, który dokona walidacji danych (zadanie JS) -->
     <!-- @include 'linkjs.kit' -->
-    <script>
-        $(document).click(function (event) {
-            var clickover = $(event.target);
-            var _opened = $(".navbar-collapse").hasClass("show");
-            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-                $(".navbar-toggler").click();
-            }
-        });
-    </script>
+
 </body>
 
 </html>

@@ -14,14 +14,123 @@
     Powodzenia!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-body {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+
+// Global styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #3B1098;
+    background: -webkit-linear-gradient(top left, #3B1098, #DB1694);
+    background: -moz-linear-gradient(top left, #3B1098, #DB1694);
+    background: linear-gradient(to bottom right, #3B1098, #DB1694);    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
 
-#task-frontend {
+  
+  ::selection{
+    background: #3B1098;
+    color: #fff;
+  }
 
-    border: 2px solid gray;
-    padding: 1em;
+  .wrapper {
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    
+    .title h1{
+        width: 100%;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+      }
 
+      .form-container{
+        width: 100%;
+        overflow: hidden;
+
+        .form-inner{
+            display: flex;
+            width: 200%;
+            
+            form{
+                width: 50%;
+                transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+                
+                .field{
+                    height: 50px;
+                    width: 100%;
+                    margin-top: 20px;
+
+                    input{
+                        height: 100%;
+                        width: 100%;
+                        outline: none;
+                        padding-left: 15px;
+                        border-radius: 5px;
+                        border: 1px solid lightgrey;
+                        border-bottom-width: 2px;
+                        font-size: 17px;
+                        transition: all 0.3s ease;
+                        
+                        &:focus{
+                            border-color: #EE1D99;
+                            box-shadow: inset 0 0 3px #EE1D99;
+                        }
+
+                        &::placeholder{
+                            color: #999;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+
+                .field-checkbox {
+                    margin-top: 20px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* jeżeli pole jest błędne ale i nie pokazuje placeholdera */
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+    border-color: red;
+    outline: none;
+    box-shadow: inset 0 0 2px red;
+}
+
+input:not(:placeholder-shown):required:valid,
+textarea:not(:placeholder-shown):required:valid {
+    border-color: #4dcc23;
+    outline: none;
+    box-shadow: inset 0 0 2px #4dcc23;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(108, 137, 231);
 }
