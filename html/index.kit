@@ -5,15 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paweł Krzysztofik | Doradztwo Finansowe</title>
-    <!-- Font: Roboto 400/700 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e20943e3ff.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <!-- @include 'fonts/roboto.kit' -->
+    <!-- @include 'fonts/fontawesome.kit' -->
+    <!-- @include 'linkbootstrap441_css.kit' -->
+    <!-- @include 'linkcss.kit' -->
 </head>
 
 <body>
@@ -441,17 +436,8 @@
     <footer class="bg-gold text-muted border-top">
         <p class="text-center py-4 m-0">&copy; Paweł Krzysztofik | 2021 Copyright</p>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-    <script src="./dist/js/main.min.js"></script>
+    <!-- @include 'linkbootstrap441_js.kit' -->
+    <!-- @include 'linkjs.kit' -->
     <script>
         $(document).click(function (event) {
             var clickover = $(event.target);
