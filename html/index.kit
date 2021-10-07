@@ -37,16 +37,19 @@
                 </div>
                 <div class="form-container">
                     <div class="form-inner">
-                        <form action="#" class="login">
+                        <form action="#" id="form" class="login">
                             <div class="field">
-                                <input type="text" placeholder="Imię" pattern="[A-Za-z]{2,20}" required>
+                                <input type="text" id="userName" placeholder="Imię" required>
+                                <p class="error-message userName">Wpisz prawidłowe imię</p>
+
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Nazwisko" pattern="[A-Za-z]{2,20}" required>
+                                <input type="text" id="userSurname" placeholder="Nazwisko" required>
+                                <p class="error-message userSurname">Wpisz prawidłowe nazwisko</p>
                             </div>
                             <div class="field">
-                                <input type="email" placeholder="Email"
-                                    pattern="[a-zA-Z0-9-]{3,}@[a-zA-Z0-9-]{3,}[.]{1}[a-zA-Z]{2,}" required>
+                                <input type="email" id="userEmail" placeholder="Email" required>
+                                <p class="error-message userEmail">Wpisz prawidłowy adres email</p>
                             </div>
                             <div class="field-checkbox">
                                 <p>Sekcje, które Cię interesują:</p>
@@ -73,6 +76,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <p class="error-message userChoice">Wybierz przynajmniej jedną sekcję</p>
                             </div>
                             <div class="field">
                                 <input type="submit" value="Wyślij">
@@ -81,12 +85,10 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
     </main>
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

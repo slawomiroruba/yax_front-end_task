@@ -116,21 +116,33 @@ html,body{
     }
 }
 
-/* jeżeli pole jest błędne ale i nie pokazuje placeholdera */
-input:not(:placeholder-shown):invalid,
-textarea:not(:placeholder-shown):invalid {
-    border-color: red;
-    outline: none;
-    box-shadow: inset 0 0 2px red;
+.field-error {
+    box-shadow: inset 0 0 8px red;
 }
 
-input:not(:placeholder-shown):required:valid,
-textarea:not(:placeholder-shown):required:valid {
-    border-color: #4dcc23;
-    outline: none;
-    box-shadow: inset 0 0 2px #4dcc23;
+.field-correct {
+    box-shadow: inset 0 0 8px green;
 }
 
-input[type=submit]:hover {
-    background-color: rgb(108, 137, 231);
+.error-message {
+    display: none;
+    font-size: 13px;
+    font-weight: normal !important;
+    color: red;
 }
+
+.display-block {
+    display: block;
+}
+
+
+// input:not(:placeholder-shown):required:valid,
+// textarea:not(:placeholder-shown):required:valid {
+//     border-color: #4dcc23;
+//     outline: none;
+//     box-shadow: inset 0 0 2px #4dcc23;
+// }
+
+// input[type=submit]:hover {
+//     background-color: rgb(108, 137, 231);
+// }
