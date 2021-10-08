@@ -88,6 +88,7 @@ form.addEventListener("submit", e => {
         inputName.classList.remove("field-correct");
         inputSurname.classList.remove("field-correct");
         inputEmail.classList.remove("field-correct");
+        errorChoice.classList.remove("display-block");
         form.reset();
     } else {
         errorChoice.classList.add("display-block");
